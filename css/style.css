@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Styles for the logo */
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo #d {
+  background-color: black;
+  width: 30px;
+  height: 35px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  margin-right: 15px;
+}
+
+#logo #logo-text {
+  font-weight: bold;
+}
+
+/* Nav Bar styles Here */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 25px;
+  transition: 0.8s;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+/* Style for active link */
+nav ul li a.active,
+nav ul li a:hover {
+  color: #2034a0;
+  position: relative;
+}
+
+nav ul li a.active::before {
+  width: 20px;
+  height: 2px;
+  content: " ";
+  background-color: #2034a0;
+  position: absolute;
+  bottom: -3px;
+  left: 2px;
+}
+/* End Active link style */
+
+nav button {
+  padding: 10px 25px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  margin: 15px;
+}
+
+nav #login {
+  border: 1px solid #2034a0;
+  color: #2034a0;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+nav #sign-up {
+  background-color: #2034a0;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Main Styles Begin  */
+main {
+  display: flex;
+  height: calc(100vh - 101.1px);
+}
+
+#content {
+  width: 55%;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#content h1 {
+  padding: 10px 15%;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+#content p {
+  padding: 30px 15%;
+  font-size: 16px;
+}
+
+#content form {
+  margin: 0px 15%;
+  /* padding: 10px 10px; */
+  border-radius: 50px;
+  background-color: #e4e6f4;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#content form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #e4e6f4;
+  padding-left: 25px;
+}
+
+#content form button {
+  padding: 10px 25px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #2034a0;
+  color: #fff;
+  cursor: pointer;
+}
+
+#pattern {
+  width: 45%;
+  background-image: url("../images/pexels-anni-roenkae-2832382.jpg");
+  background-size: cover;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  padding: 30px 15%;
+}
+
+footer ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
